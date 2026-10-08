@@ -1,136 +1,338 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Neel Bhavsar — Full Stack Developer</title>
-<meta name="description" content="Neel Bhavsar builds full stack web apps with MERN and PHP/MySQL.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Neel Bhavsar — Full Stack Developer</title>
+  <meta name="description" content="Neel Bhavsar builds full stack web apps with MERN and PHP/MySQL.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Instrument+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<div id="bar"></div><canvas id="fx" aria-hidden="true"></canvas><div id="dot" aria-hidden="true"></div><div id="ring" aria-hidden="true"><span></span></div>
+  <div id="bar"></div><canvas id="fx" aria-hidden="true"></canvas>
+  <div id="dot" aria-hidden="true"></div>
+  <div id="ring" aria-hidden="true"><span></span></div>
 
-<header class="nav">
-  <a href="#top" class="logo" data-cursor="Top">nb.</a>
-  <nav><a href="#work">Work</a><a href="#stack">Stack</a><a href="#path">Path</a><a href="#contact">Contact</a></nav>
-  <div class="tools"><button id="cmdk" class="kbd" aria-label="Open command menu">⌘K</button><button id="theme" aria-label="Toggle dark mode">◐</button></div>
-</header>
+  <header class="nav">
+    <a href="#top" class="logo" data-cursor="Top">NB</a>
+    <nav><a href="#work">Work</a><a href="#stack">Stack</a><a href="#path">Path</a><a href="#contact">Contact</a></nav>
+    <div class="tools"><button id="cmdk" class="kbd" aria-label="Open command menu">⌘</button><button id="theme"
+        aria-label="Toggle dark mode">◐</button></div>
+  </header>
 
-<main id="top">
-<section class="bento">
-  <div class="tile intro">
-    <svg class="badge" viewBox="0 0 100 100" aria-hidden="true"><defs><path id="c" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0"/></defs><text><textPath href="#c">MERN • PHP • MySQL • OPEN TO WORK •</textPath></text></svg>
-    <p class="chip" id="role">Full Stack Developer</p>
-    <h1 id="name" data-text="Neel Bhavsar">Neel<br>Bhavsar</h1>
-    <p class="lead">I turn ideas into full stack web apps: React on the front, Node or PHP behind it, and a database that holds up.</p>
-    <div class="cta"><a class="btn" data-mag data-cursor="Go" href="#work">See my work</a><a class="btn alt" data-mag data-cursor="Mail" href="mailto:neelbhavsar440@gmail.com">Say hello</a></div>
-  </div>
-  <div class="tile time"><small>Based in Navsari, India</small><b id="clock">--:--:--</b><span>local time, IST</span></div>
-  <div class="tile orbit" aria-label="Tech stack">
-    <div class="core">Full<br>Stack</div>
-    <div class="ring"><i style="--a:0deg"><u>React</u></i><i style="--a:72deg"><u>Node</u></i><i style="--a:144deg"><u>Mongo</u></i><i style="--a:216deg"><u>PHP</u></i><i style="--a:288deg"><u>MySQL</u></i></div>
-  </div>
-  <div class="tile code"><pre><span class="c">// neel.js</span>
+  <main id="top">
+    <section class="bento">
+      <div class="tile intro">
+        <svg class="badge" viewBox="0 0 100 100" aria-hidden="true">
+          <defs>
+            <path id="c" d="M50,50 m-38,0 a38,38 0 1,1 76,0 a38,38 0 1,1 -76,0" />
+          </defs><text>
+            <textPath href="#c">MERN • PHP • MySQL • OPEN TO WORK •</textPath>
+          </text>
+        </svg>
+        <p class="chip" id="role">Full Stack Developer</p>
+        <h1 id="name" data-text="Neel Bhavsar">Neel<br>Bhavsar</h1>
+        <p class="lead">I turn ideas into full stack web apps: React on the front, Node or PHP behind it, and a database
+          that holds up.</p>
+        <div class="cta"><a class="btn" data-mag data-cursor="Go" href="#work">See my work</a><a class="btn alt"
+            data-mag data-cursor="Mail" href="mailto:neelbhavsar440@gmail.com">Say hello</a></div>
+      </div>
+      <div class="tile time"><small>Based in Navsari, India</small><b id="clock">--:--:--</b><span>local time,
+          IST</span></div>
+      <div class="tile orbit" aria-label="Tech stack">
+        <div class="core">Full<br>Stack</div>
+        <div class="ring"><i style="--a:0deg"><u>React</u></i><i style="--a:72deg"><u>Node</u></i><i
+            style="--a:144deg"><u>Mongo</u></i><i style="--a:216deg"><u>PHP</u></i><i
+            style="--a:288deg"><u>MySQL</u></i></div>
+      </div>
+      <div class="tile code">
+        <pre><span class="c">// neel.js</span>
 <span class="k">const</span> neel = {
   stack: [<span class="s">"MERN"</span>, <span class="s">"PHP"</span>],
   db: [<span class="s">"MongoDB"</span>, <span class="s">"MySQL"</span>],
   ships: <span class="s">"clean code"</span>,
   open: <span class="k">true</span><span class="caret"></span>
-};</pre></div>
-  <div class="tile nums"><div><b data-n="6">0</b><span>web projects</span></div><div><b data-n="10">0</b><span>MySQL tables, one app</span></div></div>
-  <a class="tile pay" href="#work" data-cursor="Open"><small>Featured</small><b>ShopEase</b><span>E-commerce with Razorpay payments →</span></a>
-</section>
+};</pre>
+      </div>
+      <div class="tile nums">
+        <div><b data-n="6">0</b><span>web projects</span></div>
+        <div><b data-n="10">0</b><span>MySQL tables, one app</span></div>
+      </div>
+      <a class="tile pay" href="#work" data-cursor="Open"><small>Featured</small><b>ShopEase</b><span>E-commerce with
+          Razorpay payments →</span></a>
+    </section>
 
-<div class="marquee" aria-hidden="true"><div><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>REST APIs</span><span>Razorpay</span><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>REST APIs</span><span>Razorpay</span></div></div>
+    <div class="marquee" aria-hidden="true">
+      <div>
+        <span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>REST
+          APIs</span><span>Razorpay</span><span>MongoDB</span><span>Express</span><span>React</span><span>Node.js</span><span>PHP</span><span>MySQL</span><span>REST
+          APIs</span><span>Razorpay</span>
+      </div>
+    </div>
 
-<section id="work" class="sec">
-  <h2 class="rv">Selected work</h2>
-  <div class="deck">
-    <article class="proj" style="--c:#ffd23f;--i:0">
-      <div class="pi"><p class="ty">Full stack · E-commerce</p><h3>ShopEase</h3><p>A complete online store with a customer storefront and an admin dashboard.</p>
-        <ul class="ft"><li>Authentication</li><li>Product browsing</li><li>Cart &amp; checkout</li><li>Order management</li><li>Razorpay payments</li></ul>
-        <p class="tech"><span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>Razorpay</span></p>
-        <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code on GitHub</a></div>
-      <div class="mw"><div class="mock"><div class="mb"><s></s><s></s><s></s><em>shopease</em></div><div class="tabs"><button class="on" data-p="0">Storefront</button><button data-p="1">Admin</button></div><div class="mc"><div class="pg"><div class="pd"><u></u>Sneakers<b>₹2,499</b></div><div class="pd"><u></u>Backpack<b>₹1,299</b></div><div class="pd"><u></u>Watch<b>₹3,999</b></div></div><span class="pb">Checkout with Razorpay</span></div><div class="mc" hidden><div class="rw"><span>Orders today</span><b>12</b></div><div class="rw"><span>Products</span><b>48</b></div><div class="rw"><span>Latest order</span><span class="st w">Processing</span></div><span class="pb">+ Add product</span></div></div><small class="cap">Sample UI preview</small></div>
-    </article>
-    <article class="proj" style="--c:#ff7eb3;--i:1">
-      <div class="pi"><p class="ty">PHP · Internship project at BEEPIXL</p><h3>OnroadGoFuelly</h3><p>A web-based fuel ordering and management system, built in a 2-member team.</p>
-        <ul class="ft"><li>6 pages</li><li>3 forms</li><li>10 database tables</li><li>Order tracking</li><li>Admin dashboard</li></ul>
-        <p class="tech"><span>PHP</span><span>MySQL</span></p>
-        <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code on GitHub</a></div>
-      <div class="mw"><div class="mock"><div class="mb"><s></s><s></s><s></s><em>onroadgofuelly</em></div><div class="mc"><div class="rw"><span>#1024 · Diesel 20L</span><span class="st">Delivered</span></div><div class="rw"><span>#1025 · Petrol 10L</span><span class="st w">On the way</span></div><div class="rw"><span>#1026 · Diesel 50L</span><span class="st p">Pending</span></div></div></div><small class="cap">Sample UI preview</small></div>
-    </article>
-    <article class="proj" style="--c:#8fa2ff;--i:2">
-      <div class="pi"><p class="ty">Full stack · MERN</p><h3>Blog Application</h3><p>A blogging platform where users sign in, write posts and comment.</p>
-        <ul class="ft"><li>User authentication</li><li>Comments</li><li>CRUD posts</li><li>MVC architecture</li></ul>
-        <p class="tech"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span></p>
-        <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code on GitHub</a></div>
-      <div class="mw"><div class="mock"><div class="mb"><s></s><s></s><s></s><em>blog</em></div><div class="mc"><b>My first MERN app</b><small class="meta">Posted by Neel · 2 comments</small><p class="bt">Built with MongoDB, Express, React and Node. Here is how the pieces fit together.</p><div class="bub"><b>Riya</b>Great post!</div><div class="bub"><b>Amit</b>Thanks for sharing.</div></div></div><small class="cap">Sample UI preview</small></div>
-    </article>
-    <article class="proj" style="--c:#7ff0cf;--i:3">
-      <div class="pi"><p class="ty">Full stack · MERN</p><h3>Product Management System</h3><p>A product management app with an admin dashboard for scalable product data.</p>
-        <ul class="ft"><li>REST APIs</li><li>Admin dashboard</li><li>Product CRUD</li></ul>
-        <p class="tech"><span>Node.js</span><span>Express</span><span>MongoDB</span></p>
-        <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code on GitHub</a></div>
-      <div class="mw"><div class="mock"><div class="mb"><s></s><s></s><s></s><em>products admin</em></div><div class="mc"><div class="rw"><span>Laptop · 24 in stock</span><span class="st w">Edit</span></div><div class="rw"><span>Headset · 58 in stock</span><span class="st w">Edit</span></div><span class="pb">+ Add product</span></div></div><small class="cap">Sample UI preview</small></div>
-    </article>
-    <article class="proj" style="--c:#ffa86b;--i:4">
-      <div class="pi"><p class="ty">Frontend · React</p><h3>Library Management System</h3><p>A responsive app to manage books and users with different access levels.</p>
-        <ul class="ft"><li>Role-based access</li><li>CRUD</li><li>Search</li><li>LocalStorage</li></ul>
-        <p class="tech"><span>React.js</span></p>
-        <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code on GitHub</a></div>
-      <div class="mw"><div class="mock"><div class="mb"><s></s><s></s><s></s><em>library</em></div><div class="mc"><div class="inp">Search books…</div><div class="rw"><span>Clean Code</span><span class="st">Available</span></div><div class="rw"><span>Atomic Habits</span><span class="st p">Issued</span></div></div></div><small class="cap">Sample UI preview</small></div>
-    </article>
-    <article class="proj" style="--c:#d5b8ff;--i:5">
-      <div class="pi"><p class="ty">Frontend · JavaScript</p><h3>Shopping Cart System</h3><p>A dynamic cart that recalculates prices live and remembers your items.</p>
-        <ul class="ft"><li>Real-time totals</li><li>Persistent cart</li></ul>
-        <p class="tech"><span>JavaScript</span><span>LocalStorage</span></p>
-        <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code on GitHub</a></div>
-      <div class="mw"><div class="mock"><div class="mb"><s></s><s></s><s></s><em>cart</em></div><div class="mc"><div class="rw"><span>Item A × 2</span><b>₹598</b></div><div class="rw"><span>Item B × 1</span><b>₹299</b></div><div class="rw"><b>Total</b><b>₹897</b></div></div></div><small class="cap">Sample UI preview</small></div>
-    </article>
-  </div>
-</section>
+    <section id="work" class="sec">
+      <h2 class="rv">Selected work</h2>
+      <div class="deck">
+        <article class="proj" style="--c:#ffd23f;--i:0">
+          <div class="pi">
+            <p class="ty">Full stack · E-commerce</p>
+            <h3>ShopEase</h3>
+            <p>A complete online store with a customer storefront and an admin dashboard.</p>
+            <ul class="ft">
+              <li>Authentication</li>
+              <li>Product browsing</li>
+              <li>Cart &amp; checkout</li>
+              <li>Order management</li>
+              <li>Razorpay payments</li>
+            </ul>
+            <p class="tech">
+              <span>React</span><span>Node.js</span><span>Express</span><span>MySQL</span><span>Razorpay</span>
+            </p>
+            <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code
+              on GitHub</a>
+          </div>
+          <div class="mw">
+            <div class="mock">
+              <div class="mb"><s></s><s></s><s></s><em>shopease</em></div>
+              <div class="tabs"><button class="on" data-p="0">Storefront</button><button data-p="1">Admin</button></div>
+              <div class="mc">
+                <div class="pg">
+                  <div class="pd"><u></u>Sneakers<b>₹2,499</b></div>
+                  <div class="pd"><u></u>Backpack<b>₹1,299</b></div>
+                  <div class="pd"><u></u>Watch<b>₹3,999</b></div>
+                </div><span class="pb">Checkout with Razorpay</span>
+              </div>
+              <div class="mc" hidden>
+                <div class="rw"><span>Orders today</span><b>12</b></div>
+                <div class="rw"><span>Products</span><b>48</b></div>
+                <div class="rw"><span>Latest order</span><span class="st w">Processing</span></div><span class="pb">+
+                  Add product</span>
+              </div>
+            </div><small class="cap">Sample UI preview</small>
+          </div>
+        </article>
+        <article class="proj" style="--c:#ff7eb3;--i:1">
+          <div class="pi">
+            <p class="ty">PHP · Internship project at BEEPIXL</p>
+            <h3>OnroadGoFuelly</h3>
+            <p>A web-based fuel ordering and management system, built in a 2-member team.</p>
+            <ul class="ft">
+              <li>6 pages</li>
+              <li>3 forms</li>
+              <li>10 database tables</li>
+              <li>Order tracking</li>
+              <li>Admin dashboard</li>
+            </ul>
+            <p class="tech"><span>PHP</span><span>MySQL</span></p>
+            <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code
+              on GitHub</a>
+          </div>
+          <div class="mw">
+            <div class="mock">
+              <div class="mb"><s></s><s></s><s></s><em>onroadgofuelly</em></div>
+              <div class="mc">
+                <div class="rw"><span>#1024 · Diesel 20L</span><span class="st">Delivered</span></div>
+                <div class="rw"><span>#1025 · Petrol 10L</span><span class="st w">On the way</span></div>
+                <div class="rw"><span>#1026 · Diesel 50L</span><span class="st p">Pending</span></div>
+              </div>
+            </div><small class="cap">Sample UI preview</small>
+          </div>
+        </article>
+        <article class="proj" style="--c:#8fa2ff;--i:2">
+          <div class="pi">
+            <p class="ty">Full stack · MERN</p>
+            <h3>Blog Application</h3>
+            <p>A blogging platform where users sign in, write posts and comment.</p>
+            <ul class="ft">
+              <li>User authentication</li>
+              <li>Comments</li>
+              <li>CRUD posts</li>
+              <li>MVC architecture</li>
+            </ul>
+            <p class="tech"><span>Node.js</span><span>Express</span><span>MongoDB</span><span>REST APIs</span></p>
+            <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code
+              on GitHub</a>
+          </div>
+          <div class="mw">
+            <div class="mock">
+              <div class="mb"><s></s><s></s><s></s><em>blog</em></div>
+              <div class="mc"><b>My first MERN app</b><small class="meta">Posted by Neel · 2 comments</small>
+                <p class="bt">Built with MongoDB, Express, React and Node. Here is how the pieces fit together.</p>
+                <div class="bub"><b>Riya</b>Great post!</div>
+                <div class="bub"><b>Amit</b>Thanks for sharing.</div>
+              </div>
+            </div><small class="cap">Sample UI preview</small>
+          </div>
+        </article>
+        <article class="proj" style="--c:#7ff0cf;--i:3">
+          <div class="pi">
+            <p class="ty">Full stack · MERN</p>
+            <h3>Product Management System</h3>
+            <p>A product management app with an admin dashboard for scalable product data.</p>
+            <ul class="ft">
+              <li>REST APIs</li>
+              <li>Admin dashboard</li>
+              <li>Product CRUD</li>
+            </ul>
+            <p class="tech"><span>Node.js</span><span>Express</span><span>MongoDB</span></p>
+            <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code
+              on GitHub</a>
+          </div>
+          <div class="mw">
+            <div class="mock">
+              <div class="mb"><s></s><s></s><s></s><em>products admin</em></div>
+              <div class="mc">
+                <div class="rw"><span>Laptop · 24 in stock</span><span class="st w">Edit</span></div>
+                <div class="rw"><span>Headset · 58 in stock</span><span class="st w">Edit</span></div><span class="pb">+
+                  Add product</span>
+              </div>
+            </div><small class="cap">Sample UI preview</small>
+          </div>
+        </article>
+        <article class="proj" style="--c:#ffa86b;--i:4">
+          <div class="pi">
+            <p class="ty">Frontend · React</p>
+            <h3>Library Management System</h3>
+            <p>A responsive app to manage books and users with different access levels.</p>
+            <ul class="ft">
+              <li>Role-based access</li>
+              <li>CRUD</li>
+              <li>Search</li>
+              <li>LocalStorage</li>
+            </ul>
+            <p class="tech"><span>React.js</span></p>
+            <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code
+              on GitHub</a>
+          </div>
+          <div class="mw">
+            <div class="mock">
+              <div class="mb"><s></s><s></s><s></s><em>library</em></div>
+              <div class="mc">
+                <div class="inp">Search books…</div>
+                <div class="rw"><span>Clean Code</span><span class="st">Available</span></div>
+                <div class="rw"><span>Atomic Habits</span><span class="st p">Issued</span></div>
+              </div>
+            </div><small class="cap">Sample UI preview</small>
+          </div>
+        </article>
+        <article class="proj" style="--c:#d5b8ff;--i:5">
+          <div class="pi">
+            <p class="ty">Frontend · JavaScript</p>
+            <h3>Shopping Cart System</h3>
+            <p>A dynamic cart that recalculates prices live and remembers your items.</p>
+            <ul class="ft">
+              <li>Real-time totals</li>
+              <li>Persistent cart</li>
+            </ul>
+            <p class="tech"><span>JavaScript</span><span>LocalStorage</span></p>
+            <a class="gh" href="https://github.com/Neel2377" target="_blank" rel="noopener" data-cursor="Code">View code
+              on GitHub</a>
+          </div>
+          <div class="mw">
+            <div class="mock">
+              <div class="mb"><s></s><s></s><s></s><em>cart</em></div>
+              <div class="mc">
+                <div class="rw"><span>Item A × 2</span><b>₹598</b></div>
+                <div class="rw"><span>Item B × 1</span><b>₹299</b></div>
+                <div class="rw"><b>Total</b><b>₹897</b></div>
+              </div>
+            </div><small class="cap">Sample UI preview</small>
+          </div>
+        </article>
+      </div>
+    </section>
 
-<section id="stack" class="sec">
-  <h2 class="rv">Toolbox</h2>
-  <div class="boxes">
-    <div class="tile tilt rv"><h3>Frontend</h3><p>HTML5, CSS3, JavaScript (ES6+), React.js, React Router, Bootstrap, jQuery, Responsive Design</p></div>
-    <div class="tile tilt rv"><h3>Backend</h3><p>Node.js, Express.js, PHP, RESTful APIs, MVC, Authentication &amp; Authorization</p></div>
-    <div class="tile tilt rv"><h3>Databases</h3><p>MongoDB, MySQL, Data Modelling, CRUD Operations, Database Fundamentals</p></div>
-    <div class="tile tilt rv"><h3>Tools</h3><p>Git, GitHub, Postman, Razorpay Integration, Agile Development, Basic Computer Networking</p></div>
-  </div>
-  <h3 class="sub rv">Beyond code: data, documents and office work</h3>
-  <div class="boxes ops">
-    <div class="tile tilt rv"><h3>Data entry &amp; operations</h3><p>Data Entry, Computer Operations, Data Management, Document Typing, Data Accuracy, Internet &amp; Email, Printing &amp; Scanning, Basic Troubleshooting</p></div>
-    <div class="tile tilt rv"><h3>Office &amp; admin</h3><p>Office Administration, Back Office Support, Record Keeping, Filing &amp; Organization, Document Control, File &amp; Folder Management, Digital Documentation</p></div>
-    <div class="tile tilt rv"><h3>MS Office</h3><p>Microsoft Word, Excel and PowerPoint, plus Document Preparation and Report Preparation</p></div>
-    <div class="tile tilt rv"><h3>Working style</h3><p>Attention to Detail, Time Management, Communication, Teamwork, Organization, Adaptability</p></div>
-  </div>
-</section>
+    <section id="stack" class="sec">
+      <h2 class="rv">Toolbox</h2>
+      <div class="boxes">
+        <div class="tile tilt rv">
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript (ES6+), React.js, React Router, Bootstrap, jQuery, Responsive Design</p>
+        </div>
+        <div class="tile tilt rv">
+          <h3>Backend</h3>
+          <p>Node.js, Express.js, PHP, RESTful APIs, MVC, Authentication &amp; Authorization</p>
+        </div>
+        <div class="tile tilt rv">
+          <h3>Databases</h3>
+          <p>MongoDB, MySQL, Data Modelling, CRUD Operations, Database Fundamentals</p>
+        </div>
+        <div class="tile tilt rv">
+          <h3>Tools</h3>
+          <p>Git, GitHub, Postman, Razorpay Integration, Agile Development, Basic Computer Networking</p>
+        </div>
+      </div>
+      <h3 class="sub rv">Beyond code: data, documents and office work</h3>
+      <div class="boxes ops">
+        <div class="tile tilt rv">
+          <h3>Data entry &amp; operations</h3>
+          <p>Data Entry, Computer Operations, Data Management, Document Typing, Data Accuracy, Internet &amp; Email,
+            Printing &amp; Scanning, Basic Troubleshooting</p>
+        </div>
+        <div class="tile tilt rv">
+          <h3>Office &amp; admin</h3>
+          <p>Office Administration, Back Office Support, Record Keeping, Filing &amp; Organization, Document Control,
+            File &amp; Folder Management, Digital Documentation</p>
+        </div>
+        <div class="tile tilt rv">
+          <h3>MS Office</h3>
+          <p>Microsoft Word, Excel and PowerPoint, plus Document Preparation and Report Preparation</p>
+        </div>
+        <div class="tile tilt rv">
+          <h3>Working style</h3>
+          <p>Attention to Detail, Time Management, Communication, Teamwork, Organization, Adaptability</p>
+        </div>
+      </div>
+    </section>
 
-<section id="path" class="sec">
-  <h2 class="rv">Path</h2>
-  <ol class="path"><div class="line"><div id="lf"></div></div>
-    <li class="rv"><time>Dec 2023 – Mar 2024</time><h3>PHP Web Developer Intern, BEEPIXL</h3><p>2-member team on OnroadGoFuelly. Built 6 pages and 3 forms joining UI to PHP, connected 10 MySQL tables, and fixed bugs.</p></li>
-    <li class="rv"><time>2024</time><h3>B.Tech, Information Technology</h3><p>Parul University. Graduated.</p></li>
-    <li class="rv"><time>Certification</time><h3>Full Stack Developer</h3><p>Red &amp; White Skill Education.</p></li>
-    <li class="rv"><time>Certification</time><h3>NIELIT CCC, Course on Computer Concepts</h3><p>National Institute of Electronics &amp; Information Technology.</p></li>
-  </ol>
-</section>
+    <section id="path" class="sec">
+      <h2 class="rv">Path</h2>
+      <ol class="path">
+        <div class="line">
+          <div id="lf"></div>
+        </div>
+        <li class="rv"><time>Dec 2023 – Mar 2024</time>
+          <h3>PHP Web Developer Intern, BEEPIXL</h3>
+          <p>2-member team on OnroadGoFuelly. Built 6 pages and 3 forms joining UI to PHP, connected 10 MySQL tables,
+            and fixed bugs.</p>
+        </li>
+        <li class="rv"><time>2024</time>
+          <h3>B.Tech, Information Technology</h3>
+          <p>Parul University. Graduated.</p>
+        </li>
+        <li class="rv"><time>Certification</time>
+          <h3>Full Stack Developer</h3>
+          <p>Red &amp; White Skill Education.</p>
+        </li>
+        <li class="rv"><time>Certification</time>
+          <h3>NIELIT CCC, Course on Computer Concepts</h3>
+          <p>National Institute of Electronics &amp; Information Technology.</p>
+        </li>
+      </ol>
+    </section>
 
-<section id="contact" class="sec contact">
-  <h2 class="rv">Got an idea?<br>Let's build it.</h2>
-  <button class="mail" id="copy" data-mag data-cursor="Copy">neelbhavsar440@gmail.com</button>
-  <p class="hint" id="hint">Click to copy the email</p>
-  <p class="langs"><b>I speak</b><span>English</span><span>Hindi</span><span>Gujarati</span></p>
-  <p class="links"><a href="tel:+919978403138">+91 99784 03138</a><a href="https://linkedin.com/in/neel-bhavsar23" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Neel2377" target="_blank" rel="noopener">GitHub</a></p>
-</section>
-</main>
-<footer>© <span id="y"></span> Neel Bhavsar · Press ⌘K / Ctrl K to jump around</footer>
+    <section id="contact" class="sec contact">
+      <h2 class="rv">Got an idea?<br>Let's build it.</h2>
+      <button class="mail" id="copy" data-mag data-cursor="Copy">neelbhavsar440@gmail.com</button>
+      <p class="hint" id="hint">Click to copy the email</p>
+      <!-- <p class="langs"><b>I speak</b><span>English</span><span>Hindi</span><span>Gujarati</span></p> -->
+      <p class="links"><a href="tel:+919978403138">+91 99784 03138</a><a href="https://linkedin.com/in/neel-bhavsar23"
+          target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Neel2377" target="_blank"
+          rel="noopener">GitHub</a></p>
+    </section>
+  </main>
+  <footer>© <span id="y"></span> Neel Bhavsar</footer>
 
-<dialog id="pal"><input id="q" placeholder="Type a command…" aria-label="Command"><ul id="list"></ul></dialog>
-<script src="js/main.js"></script>
+  <dialog id="pal"><input id="q" placeholder="Type a command…" aria-label="Command">
+    <ul id="list"></ul>
+  </dialog>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
